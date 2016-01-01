@@ -1,0 +1,10 @@
+2015年12月31日
+ 配置php+mysql
+mysql安装成功后会显示一个临时的密码 需要把这个临时的密码记下，因为phpMyAdmin中无法通过临时密码进行登录。
+但是再mysqlworkbeach中却可以使用临时的密码进行登录。
+mac中集成了阿帕奇服务器 打开后可以通过浏览器的localhost访问到里面的内容。
+HTML5+CSS3+nginx+nodejs+MongoDB  一个网站的组合
+nginx 是一个高性能的HTTP和反向代理服务器
+nodejs 是一个后台语言
+MongoDB 是一个基于分布式文件存储的数据库
+整体看来 很快捷 性能应该很不错。不知道到时候具体的使用的时候的时候是否会比较稳定吧。
