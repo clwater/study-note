@@ -1,3 +1,69 @@
 2016年1月1日
 今天开始学习php
 还有github 其实一直都想学的 只是一只看不懂 也不想问别人就耽误了下来，今天仔细看了看 用github destktop试试，感觉还是很容易上手的。
+php的学习之路
+＝－＝  这都是啥
+输出 echo print 前一个可以输出多个字符串 后面的只能输出一个字符串
+字符串的连接使用 . 进行连接 同理还有 .=
+表单提交 get post
+全局变量 - 超全局变量 ＝－＝  不熟悉
+$_GET["name"]; 用于得到get请求中 name的值
+$_SERVER["PHP_SELF"] 提交到本页  比较危险  可能被插入语句
+
+表单验证的时候
+function test_input($data) {
+   $data = trim($data);   //去除前后空白
+   $data = stripslashes($data);// 删除反斜杠
+   $data = htmlspecialchars($data);//把预定义的字符 "<" (小于)和 ">" (大于)转换为 HTML 实体
+   return $data;
+}
+表单中选择框选中保留
+<input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">女性
+isset 函数作用 isset函数是检测变量是否设置。
+
+date 时间显示
+<?php
+echo "今天是 " . date("Y/m/d") . "<br>";
+echo "今天是 " . date("Y.m.d") . "<br>";
+echo "今天是 " . date("Y-m-d") . "<br>";
+echo "今天是 " . date("l");//周几
+?>
+
+版权所有 2008-<?php echo date("Y")?>到现在
+
+下面是常用于时间的字符：
+h - 带有首位零的 12 小时小时格式
+i - 带有首位零的分钟
+s - 带有首位零的秒（00 -59）
+a - 小写的午前和午后（am 或 pm）
+<?php
+echo "现在时间是 " . date("h:i:sa");
+?>
+两个日期之间的差别
+<?php
+$d1=strtotime("December 31");
+$d2=ceil(($d1-time())/60/60/24);
+echo "距离十二月三十一日还有：" . $d2 ." 天。";
+?>
+include 与require都是引入别的PHP文件
+include 与 require 有一个巨大的差异：如果用 include 语句引用某个文件并且 PHP 无法找到它，脚本会继续执行：
+如果我们使用 require 语句完成相同的案例，echo 语句不会继续执行，因为在 require 语句返回严重错误之后脚本就会终止执行：
+请在此时使用 require：当文件被应用程序请求时。
+请在此时使用 include：当文件不是必需的，且应用程序在文件未找到时应该继续运行时。
+
+从一张页面向另一张页面传递信息的方法 cookie 表单传递数据
+设置cookie方法
+setcookie("user", "Alex Porter", time()+3600);
+读取cookie $_COOKIE["user"]
+
+session_start() 函数必须位于 <html> 标签之前：
+
+什么是外部数据？
+来自表单的输入数据
+Cookies
+服务器变量
+数据库查询结果
+这些数据需要过滤器进行验证
+
+初步学习了php
+明天开始连接到数据库看看
