@@ -1,0 +1,10 @@
+2016年1月2日
+成功将php与mysql进行连接，并利用php对数据库进行操作。
+基本操作基本相似。
+$con = mysql_connect("127.0.0.1:3306","user1","123456");
+不要使用root进行登录  需要新建一个数据库的管理员 进行连接
+$result = mysql_query("SELECT * FROM testtable ORDER BY Age" );
+mysql_query 操作语句
+$row = mysql_fetch_array($result)
+得到查询的结果
+——————————————————————————————于14时 
