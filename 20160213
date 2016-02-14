@@ -1,0 +1,41 @@
+Sqlite清空表数据 delete from TableName;
+listview更新
+SimpleAdapter sAdapter = (SimpleAdapter)lv.getAdapter();
+           sAdapter.notifyDataSetChanged();
+
+
+
+           (3).下拉刷新底部
+
+            listView.setOnScrollListener(new OnScrollListener() {
+             private boolean isBottom = false;	//用于标记是否到达顶端
+             //listview的状态发送改变时执行
+             @Override
+             public void onScrollStateChanged(AbsListView view, int scrollState) {
+               System.out.println("scrollState:"+scrollState);
+               if(isBottom && scrollState==OnScrollListener.SCROLL_STATE_IDLE){
+                 System.out.println("数据加载");
+                 //简单模拟数据加载过程
+                 for(int j=0; j<10; j++){
+                   Map<String, String> map = new HashMap<String, String>();
+                   map.put("id", String.valueOf((i++)));
+                   map.put("name", "newName="+i);
+                   map.put("age", String.valueOf(i));
+                   adapter.getList().add(map);
+                 }
+                 adapter.notifyDataSetChanged();
+                 isBottom = false;
+               }
+             }
+             //在滚动的过程中不断执行
+             @Override
+             public void onScroll(AbsListView view, int firstVisibleItem,
+                 int visibleItemCount, int totalItemCount) {
+               System.out.println(firstVisibleItem+":"+visibleItemCount+":"+totalItemCount);
+               if(firstVisibleItem+visibleItemCount == totalItemCount){
+                 isBottom = true;
+               }else{
+                 isBottom = false;
+               }
+             }
+           });

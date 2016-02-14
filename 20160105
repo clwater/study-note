@@ -1,0 +1,15 @@
+2016年1月5日
+做了个网页
+
+用户静态页面的传值  通过得到当前页面的参数实现的
+urlinfo=window.location.href; //获取当前页面的url
+ len=urlinfo.length;//获取url的长度
+  offset=urlinfo.indexOf("?"); //设置参数字符串开始的位置
+  newsidinfo=urlinfo.substr(offset,len)//取出参数字符串 这里会获得类似“id=1”这样的字符串
+  newsids=newsidinfo.split("=");//对获得的参数字符串按照“=”进行分割
+  newsid=newsids[1];//得到参数值
+  var intStr = parseInt(newsid);
+  change(intStr);
+
+  parseInt(newsid);转换为int类型  尤其是在得到其他函数的值的时候注意类型
+  
