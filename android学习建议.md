@@ -58,6 +58,7 @@
 * [《重构-改善既有代码的设计》]()		--重构是程序的开发过程中十分重要的一个环节,知道你们觉得用不上,仔细看看这本书,这是代码由糙到精的一个必须经过的过程.重构可以有效的降低代码的维护的开发难度.
 * [《单元测试之道》]()		--测试不是只留给测试人员做的事情,也不是很简单的一个事情,更不是无关紧要的一个事情,在高危环境中(航空航天,大型工程等)的情况下不可能给你太多的bug机会,测试就往往占到这些程序的开发过程的一半之上的时间.
 * [《敏捷软件开发：原则、模式与实践》]()		--最新的开发原则,敏捷开发,何为敏捷开发,人人都在敏捷开发的现在如何保证敏捷开发的高效有效性.
+
 ***
 
 **3.其它**
@@ -79,9 +80,9 @@
 * [volley](https://github.com/mcxiaoke/android-volley)		-- Volley是谷歌官方开发团队在 2013 年 Google I/O 大会推出的一个新的网络通信框架， 对了使用了一张中世界军团集体射箭的图片,我觉得很形象,volley适合这样频发的,小流量的网络请求,可以设置okhttp作为其传输层.
 * [logger](https://github.com/orhanobut/logger) 一个很强大的调试工具.精简了log的输出方式,而且还优化了输出的显示结果,并且能提供所处线程,log位置的相关信息,还能显示json格式的字符串.用于调试程序十分的高效.
 * [xUtils](https://github.com/wyouflf/xUtils) 自己搜索相关教程的时候记得搜索xUtils3,因为之前的版本对现在的5.0之后的系统兼容性很差.xUtils是一个快速开发框架,包含了view ,db ,http ,bitmap四个模块,简化了很多开发过程中复杂而重复的工作.
-*[retrofit](https://github.com/square/retrofit) 和okhttp都来自Square公司,是目前Android最流行的 Http Client库之一.
-*[picasso](https://github.com/square/picasso)  Square公司出品,JakeWharton大神主导的一个图片缓存项目.
-*[zxing](https://github.com/zxing/zxing) 一个二维码的工具,有需要的可以使用一下.
+* [retrofit](https://github.com/square/retrofit) 和okhttp都来自Square公司,是目前Android最流行的 Http Client库之一.
+* [picasso](https://github.com/square/picasso)  Square公司出品,JakeWharton大神主导的一个图片缓存项目.
+* [zxing](https://github.com/zxing/zxing) 一个二维码的工具,有需要的可以使用一下.
 
 只提及这些开源库,开源项目中的项目十分的多,以上的这些可以对你的项目提供很多的帮助.
 
