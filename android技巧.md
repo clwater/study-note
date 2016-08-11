@@ -11,6 +11,7 @@
 * [HTextView](https://github.com/hanks-zyh/HTextView) TextView特殊效果显示
 * [CheckBox](https://github.com/CoXier/CheckBox) 自定义checkout.
 * [recyclerview-animators](https://github.com/wasabeef/recyclerview-animators) 某个recyclerview动画
+* [ldoublem](https://github.com/ldoublem/ThumbUp) 点赞与取消的效果
 
 ## 一些很好用的方法
 
