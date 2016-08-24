@@ -12,6 +12,7 @@
 * [CheckBox](https://github.com/CoXier/CheckBox) 自定义checkout.
 * [recyclerview-animators](https://github.com/wasabeef/recyclerview-animators) 某个recyclerview动画
 * [ldoublem](https://github.com/ldoublem/ThumbUp) 点赞与取消的效果
+* [HighLightGuideView](https://github.com/jaydenxiao2016/HighLightGuideView)  新手引导遮罩层
 
 ## 一些很好用的方法
 
