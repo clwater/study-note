@@ -13,7 +13,7 @@
 * [recyclerview-animators](https://github.com/wasabeef/recyclerview-animators) 某个recyclerview动画
 * [ldoublem](https://github.com/ldoublem/ThumbUp) 点赞与取消的效果
 * [HighLightGuideView](https://github.com/jaydenxiao2016/HighLightGuideView)  新手引导遮罩层
-
+* [某个海浪动画](https://github.com/ImmortalZ/Learn_Depth)
 ## 一些很好用的方法
 
 * TextUtils.isEmpty() 判断是否为空
